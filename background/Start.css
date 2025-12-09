@@ -8,7 +8,7 @@ body, html {
 
 /* Ảnh nền toàn màn hình */
 body {
-    background-image: url("../image/Startbackground.jpg");
+    background-image: url("image/Startbackground.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
