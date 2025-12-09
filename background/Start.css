@@ -1,0 +1,39 @@
+/* Reset trang */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Ảnh nền toàn màn hình */
+body {
+    background-image: url("../image/Startbackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Nút Start */
+.start-btn {
+    font-family: "Comic Sans MS", cursive;
+    position: absolute;
+    top: 69%;          /* đặt vào giữa màn hình theo chiều dọc */
+    left: 50%;         /* đặt vào giữa màn hình theo chiều ngang */
+    transform: translate(-50%, -50%);  /* căn đúng tâm */
+
+    padding: 14px 200px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #ffd700;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Hiệu ứng hover */
+.start-btn:hover {
+    background-color: #ffcc00;
+    transform: translate(-50%, -50%) scale(1.07);
+}

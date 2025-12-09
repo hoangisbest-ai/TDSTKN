@@ -1,0 +1,152 @@
+/* Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Comic Sans MS", cursive;
+    background-image: url("../image/Background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* MENU BÊN TRÁI */
+.side-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    padding: 20px;
+}
+
+/* Nút menu */
+.menu-btn {
+    background: #b8d37c;
+    padding: 16px 0;
+    text-align: center;
+
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #5a3a24;
+
+    border-radius: 20px;
+
+    position: relative;
+    transition: 0.25s;
+}
+
+/* Viền chỉ */
+.menu-btn::after {
+    content: "";
+    position: absolute;
+    inset: 6px;
+    border-radius: 15px;
+
+    border: 3px dashed transparent;
+    border-image: repeating-linear-gradient(
+        to right,
+        white 0,
+        white 5px,
+        transparent 5px,
+        transparent 12px
+    ) 30 round;
+}
+
+/* Hover */
+.menu-btn:hover {
+    background: #a8c86f;
+    transform: scale(1.05);
+}
+
+/* VÙNG NỘI DUNG */
+.content {
+    margin-left: 220px; /* chừa chỗ cho menu */
+    padding: 40px;
+}
+
+/* Tiêu đề */
+.title {
+    background: #b8d37c;
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+
+    font-size: 40px;
+    color: #5a3a24;
+    border-radius: 30px;
+
+    position: relative;
+}
+
+/* Viền chỉ cho tiêu đề */
+.title::after {
+    content: "";
+    position: absolute;
+    inset: 10px;
+    border-radius: 22px;
+    border: 4px dashed #fff;
+    pointer-events: none;
+}
+
+/* Khung giấy nội dung */
+.textbox {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.week-btn {
+    display: block;
+    text-align: center;
+    position: relative;
+    overflow: visible;
+
+    background-color: #b8d37c;
+    padding: 20px 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #5a3a24;
+    text-decoration: none;
+
+    border-radius: 30px;
+    transition: 0.25s;
+}
+.week-btn:hover {
+    background-color: #cbe8a0;
+    transform: translateX(10px) scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.week-btn:hover::after {
+    border-color: #ffffffaa; /* nhạt hơn một chút */
+}
+.week-btn:active {
+    transform: translateX(5px) scale(0.98);
+    background-color: #bddb8b;
+}
+/* Khi được chọn → nhô sang phải */
+.week-btn.active {
+    transform: translateX(50px);
+    background-color: #d2e9a3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18);
+}
+
+.week-btn::after {
+    content: "";
+    position: absolute;
+    inset: 8px;           /* khoảng cách viền bên trong */
+    border-radius: 22px;  /* bo góc giống nút */
+    border: 4px dashed #ffffff;
+    pointer-events: none; /* không ảnh hưởng khi bấm */
+}

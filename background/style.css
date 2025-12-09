@@ -1,0 +1,16 @@
+body {
+    font-family: "Comic Sans MS", cursive;
+    background: #f0f0f0;
+}
+
+h1 {
+    color: blue;
+}
+.menu-container::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-container {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE */
+}
