@@ -8,7 +8,7 @@ body, html {
 
 /* Ảnh nền ong hoa */
 body {
-    background-image: url("image/Background.jpg"); /* đổi thành ảnh của bạn */
+    background-image: url("../image/Background.jpg"); /* đổi thành ảnh của bạn */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
